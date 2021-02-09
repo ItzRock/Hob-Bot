@@ -28,7 +28,14 @@ const command = require('./command')
 const { Mongoose } = require('mongoose')
 
 client.on('ready', async () => {
-    console.log('Hob is activated!')
+    console.log('Hob Development ):< is online.')
+
+    client.user.setPresence({
+        activity: {
+            name: 'Hob Development',
+            type: 3
+        }
+    })
 
     //mute(client)
     announce(client)
